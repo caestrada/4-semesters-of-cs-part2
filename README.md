@@ -1,1 +1,3 @@
-# 4-semesters-of-cs-part2
+# 4 Semesters Of CS - Part 2
+
+[Course Website](https://btholt.github.io/four-semesters-of-cs-part-two/)
