@@ -1,0 +1,35 @@
+{
+    "name": "4-semesters-of-cs-part2",
+    "version": "1.0.0",
+    "description": "[Course Website](https://btholt.github.io/four-semesters-of-cs-part-two/)",
+    "main": "index.js",
+    "scripts": {
+        "pretest": "npm run build",
+        "test": "./node_modules/.bin/jasmine-node lib/spec",
+        "build": "babel src -d lib",
+        "prestart": "npm run build",
+        "start": "node lib/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/caestrada/4-semesters-of-cs-part2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/caestrada/4-semesters-of-cs-part2/issues"
+    },
+    "homepage": "https://github.com/caestrada/4-semesters-of-cs-part2#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.11.6",
+        "@babel/core": "^7.11.6",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/preset-env": "^7.11.5",
+        "jasmine": "^3.6.1"
+    },
+    "dependencies": {
+        "jasmine-node": "^3.0.0",
+        "xxhashjs": "^0.2.2"
+    }
+}
