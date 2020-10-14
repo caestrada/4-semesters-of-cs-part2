@@ -6,4 +6,5 @@
 ## Notes
 
 * [Bloom Filters](./src/BloomFilter.js)
-* [Depth First Traversals.js](./src/DepthFirstTraversals.js)
+* [Depth First Traversals](./src/DepthFirstTraversals.js)
+* [Breadth First Traversals](./src/BreadthFirstTraversals.js)

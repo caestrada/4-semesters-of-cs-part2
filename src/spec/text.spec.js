@@ -1,5 +1,6 @@
 import BloomFilter from "../BloomFilter";
 import { preorderTraverse, inorderTraverse, postorderTraverse } from "../DepthFirstTraversals";
+import { breadthFirstTraverse, breadthFirstTraverseRecursive } from "../BreadthFirstTraversals";
 
 
 // unit tests
@@ -29,8 +30,7 @@ describe('BloomFilter', function() {
     });
 });
 
-// unit tests
-// do not modify the below code
+// Depth First Traversals
 describe('tests', function() {
 
     const tree = {
@@ -87,5 +87,66 @@ describe('tests', function() {
 
     it('postorderTraverse', () => {
         expect(postorderTraverse(tree, [])).toEqual([2, 3, 6, 7, 5, 4, 9, 11, 10, 12, 8]);
+    });
+});
+
+
+// Breadth First Traversals
+// unit tests
+// do not modify the below code
+describe('tests', function() {
+    const answer = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'];
+
+    const tree = {
+        value: "A",
+        left: {
+            value: "B",
+            left: {
+                value: "D",
+                left: {
+                    value: "G",
+                    left: null,
+                    right: null
+                },
+                right: null
+            },
+            right: {
+                value: "E",
+                left: null,
+                right: {
+                    value: "H",
+                    left: {
+                        value: "K",
+                        left: null,
+                        right: null
+                    }
+                }
+            }
+        },
+        right: {
+            value: "C",
+            left: {
+                value: "F",
+                left: {
+                    value: "I",
+                    left: null,
+                    right: null
+                },
+                right: {
+                    value: "J",
+                    left: null,
+                    right: null
+                }
+            },
+            right: null
+        }
+    };
+
+    it('breadthFirstTraverse - iterable', () => {
+        expect(breadthFirstTraverse([tree], [])).toEqual(answer);
+    });
+
+    it('breadthFirstTraverse - recursive', () => {
+        expect(breadthFirstTraverseRecursive([tree], [])).toEqual(answer);
     });
 });
