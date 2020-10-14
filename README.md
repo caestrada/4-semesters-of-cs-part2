@@ -5,4 +5,5 @@
 
 ## Notes
 
-* [BloomFilter.js](./src/BloomFilter.js)
+* [Bloom Filters](./src/BloomFilter.js)
+* [Depth First Traversals.js](./src/DepthFirstTraversals.js)
