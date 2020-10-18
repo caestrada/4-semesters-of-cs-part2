@@ -9,3 +9,5 @@
 * [Depth First Traversals](./src/DepthFirstTraversals.js)
 * [Breadth First Traversals](./src/BreadthFirstTraversals.js)
 * [Pathfinding](./src/pathfinding.js)
+* [Graph Traversal](./src/graphTraversal.js)
+
